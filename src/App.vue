@@ -6,12 +6,14 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import store from "@/store";
+import TaskList from "@/components/PureTaskList";
 
 export default {
   name: "App",
+  store,
   components: {
-    HelloWorld
+    TaskList
   }
 };
 </script>
